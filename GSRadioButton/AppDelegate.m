@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  GSRadioButton
 //
-//  Created by Gowri Sammandhamoorthy on 4/7/16.
+//  Created by Gowri Sammandhamoorthy on 4/7/15.
 //  Copyright © 2016 Gowri Sammandhamoorthy. All rights reserved.
 //
 
@@ -16,7 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[UINavigationBar appearance]setBarTintColor:[UIColor colorWithRed:95.0/255.0 green:219.0/255.0 blue:208.0/255.0 alpha:1.0f]];
+    [[UIToolbar appearance]setBarTintColor:[UIColor colorWithRed:95.0/255.0 green:219.0/255.0 blue:208.0/255.0 alpha:1.0f]];
+    [[UIToolbar appearance]setTranslucent:NO];
+
     return YES;
 }
 

@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  GSRadioButton
 //
-//  Created by Gowri Sammandhamoorthy on 4/7/16.
+//  Created by Gowri Sammandhamoorthy on 4/7/15.
 //  Copyright © 2016 Gowri Sammandhamoorthy. All rights reserved.
 //
 

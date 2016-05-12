@@ -421,7 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GSRadioButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = att.GSRadioButton;
+				PRODUCT_BUNDLE_IDENTIFIER = self.GSRadioButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -432,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GSRadioButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = att.GSRadioButton;
+				PRODUCT_BUNDLE_IDENTIFIER = self.GSRadioButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -504,6 +504,7 @@
 				0B34BA001CB6CFC6001BADD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B34BA011CB6CFC6001BADD4 /* Build configuration list for PBXNativeTarget "GSRadioButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +513,7 @@
 				0B34BA031CB6CFC6001BADD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B34BA041CB6CFC6001BADD4 /* Build configuration list for PBXNativeTarget "GSRadioButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +522,7 @@
 				0B34BA061CB6CFC6001BADD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
