@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B01A32C1CE6D5FC0059C654 /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B01A32A1CE6D5FC0059C654 /* checkbox.png */; };
+		0B01A32D1CE6D5FC0059C654 /* checkbox-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B01A32B1CE6D5FC0059C654 /* checkbox-selected.png */; };
 		0B34B9D61CB6CFC6001BADD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B34B9D51CB6CFC6001BADD4 /* main.m */; };
 		0B34B9D91CB6CFC6001BADD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B34B9D81CB6CFC6001BADD4 /* AppDelegate.m */; };
 		0B34B9DF1CB6CFC6001BADD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B34B9DD1CB6CFC6001BADD4 /* Main.storyboard */; };
@@ -16,7 +18,7 @@
 		0B34B9FA1CB6CFC6001BADD4 /* GSRadioButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B34B9F91CB6CFC6001BADD4 /* GSRadioButtonUITests.m */; };
 		0B34BA091CB6D02B001BADD4 /* radio-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B34BA071CB6D02B001BADD4 /* radio-selected.png */; };
 		0B34BA0A1CB6D02B001BADD4 /* radio-unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B34BA081CB6D02B001BADD4 /* radio-unselected.png */; };
-		0B34BA0D1CB6D094001BADD4 /* GSRadioButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B34BA0C1CB6D094001BADD4 /* GSRadioButtonView.m */; };
+		0B34BA0D1CB6D094001BADD4 /* GSButtonToggleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B34BA0C1CB6D094001BADD4 /* GSButtonToggleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B01A32A1CE6D5FC0059C654 /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox.png; sourceTree = "<group>"; };
+		0B01A32B1CE6D5FC0059C654 /* checkbox-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-selected.png"; sourceTree = "<group>"; };
 		0B34B9D11CB6CFC6001BADD4 /* GSRadioButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSRadioButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B34B9D51CB6CFC6001BADD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0B34B9D71CB6CFC6001BADD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,8 +57,8 @@
 		0B34B9FB1CB6CFC6001BADD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B34BA071CB6D02B001BADD4 /* radio-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-selected.png"; sourceTree = "<group>"; };
 		0B34BA081CB6D02B001BADD4 /* radio-unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio-unselected.png"; sourceTree = "<group>"; };
-		0B34BA0B1CB6D094001BADD4 /* GSRadioButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSRadioButtonView.h; sourceTree = SOURCE_ROOT; };
-		0B34BA0C1CB6D094001BADD4 /* GSRadioButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSRadioButtonView.m; sourceTree = SOURCE_ROOT; };
+		0B34BA0B1CB6D094001BADD4 /* GSButtonToggleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSButtonToggleView.h; sourceTree = SOURCE_ROOT; };
+		0B34BA0C1CB6D094001BADD4 /* GSButtonToggleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSButtonToggleView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +112,13 @@
 				0B34B9D71CB6CFC6001BADD4 /* AppDelegate.h */,
 				0B34B9D81CB6CFC6001BADD4 /* AppDelegate.m */,
 				0B34B9DD1CB6CFC6001BADD4 /* Main.storyboard */,
-				0B34BA0B1CB6D094001BADD4 /* GSRadioButtonView.h */,
-				0B34BA0C1CB6D094001BADD4 /* GSRadioButtonView.m */,
+				0B34BA0B1CB6D094001BADD4 /* GSButtonToggleView.h */,
+				0B34BA0C1CB6D094001BADD4 /* GSButtonToggleView.m */,
 				0B34B9E01CB6CFC6001BADD4 /* Assets.xcassets */,
 				0B34BA071CB6D02B001BADD4 /* radio-selected.png */,
 				0B34BA081CB6D02B001BADD4 /* radio-unselected.png */,
+				0B01A32A1CE6D5FC0059C654 /* checkbox.png */,
+				0B01A32B1CE6D5FC0059C654 /* checkbox-selected.png */,
 				0B34B9E21CB6CFC6001BADD4 /* LaunchScreen.storyboard */,
 				0B34B9E51CB6CFC6001BADD4 /* Info.plist */,
 				0B34B9D41CB6CFC6001BADD4 /* Supporting Files */,
@@ -249,8 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B01A32D1CE6D5FC0059C654 /* checkbox-selected.png in Resources */,
 				0B34B9E41CB6CFC6001BADD4 /* LaunchScreen.storyboard in Resources */,
 				0B34B9E11CB6CFC6001BADD4 /* Assets.xcassets in Resources */,
+				0B01A32C1CE6D5FC0059C654 /* checkbox.png in Resources */,
 				0B34BA091CB6D02B001BADD4 /* radio-selected.png in Resources */,
 				0B34B9DF1CB6CFC6001BADD4 /* Main.storyboard in Resources */,
 				0B34BA0A1CB6D02B001BADD4 /* radio-unselected.png in Resources */,
@@ -280,7 +288,7 @@
 			files = (
 				0B34B9D91CB6CFC6001BADD4 /* AppDelegate.m in Sources */,
 				0B34B9D61CB6CFC6001BADD4 /* main.m in Sources */,
-				0B34BA0D1CB6D094001BADD4 /* GSRadioButtonView.m in Sources */,
+				0B34BA0D1CB6D094001BADD4 /* GSButtonToggleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GSRadioButtonView : UIViewController
+@interface GSButtonToggleView : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *maleButton;
 @property (weak, nonatomic) IBOutlet UIButton *femaleButton;
+@property (weak, nonatomic) IBOutlet UIButton *alertbutton;
+@property (weak, nonatomic) IBOutlet UIButton *notificationButton;
 
 - (IBAction)femaleButtonPressed:(id)sender;
 - (IBAction)maleButtonpressed:(id)sender;
 - (IBAction)exitBarButtonPressed:(id)sender;
 
+- (IBAction)alertCheckBoxPressed:(id)sender;
+- (IBAction)notificationCheckboxPressed:(id)sender;
 @end

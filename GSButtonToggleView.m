@@ -6,18 +6,18 @@
 //  Copyright © 2016 Gowri Sammandhamoorthy. All rights reserved.
 //
 
-#import "GSRadioButtonView.h"
+#import "GSButtonToggleView.h"
 
-@interface GSRadioButtonView ()
+@interface GSButtonToggleView ()
 
 @end
 
-@implementation GSRadioButtonView{
+@implementation GSButtonToggleView{
     BOOL maleSelected;
     BOOL femaleSelected;
 }
 
-@synthesize maleButton,femaleButton;
+@synthesize maleButton,femaleButton, alertbutton, notificationButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,7 +28,7 @@
   
 }
 
-#pragma mark - Action Buttons.
+#pragma mark - radio Buttons.
 
 - (IBAction)femaleButtonPressed:(id)sender {
     femaleSelected = YES;
@@ -45,6 +45,19 @@
 
 - (IBAction)exitBarButtonPressed:(id)sender {
     exit(0);
+}
+
+#pragma mark - checkbox Buttons.
+- (IBAction)alertCheckBoxPressed:(id)sender {
+    alertbutton.selected = !alertbutton.selected;
+     [alertbutton setBackgroundImage:[UIImage imageNamed:@"checkbox.png"] forState:UIControlStateNormal];
+     [alertbutton setBackgroundImage:[UIImage imageNamed:@"checkbox-selected.png"] forState:UIControlStateSelected];
+}
+
+- (IBAction)notificationCheckboxPressed:(id)sender {
+      notificationButton.selected = !notificationButton.selected;
+    [notificationButton setBackgroundImage:[UIImage imageNamed:@"checkbox.png"] forState:UIControlStateNormal];
+    [notificationButton setBackgroundImage:[UIImage imageNamed:@"checkbox-selected.png"] forState:UIControlStateSelected];
 }
 
 #pragma mark - Radio Button Toggling

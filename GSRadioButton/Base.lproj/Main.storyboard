@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Radio Button-->
+        <!--Radio Button/Checkbox-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GSRadioButtonView" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GSButtonToggleView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,34 +17,154 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAL-M5-afx">
-                                <rect key="frame" x="20" y="145" width="110" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAL-M5-afx">
+                                <rect key="frame" x="20" y="152" width="110" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="TBM-uv-ecb"/>
+                                    <constraint firstAttribute="width" constant="110" id="aeo-b9-Es0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-Il-VB9">
-                                <rect key="frame" x="166" y="136" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-Il-VB9">
+                                <rect key="frame" x="166" y="143" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="FDT-n0-1Uw"/>
+                                    <constraint firstAttribute="height" constant="40" id="h4V-9I-uei"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="radio-unselected.png"/>
                                 <connections>
                                     <action selector="maleButtonpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DU5-mq-4jl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzz-9M-4vh">
-                                <rect key="frame" x="20" y="240" width="110" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzz-9M-4vh">
+                                <rect key="frame" x="20" y="215" width="110" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="JAA-uf-884"/>
+                                    <constraint firstAttribute="height" constant="21" id="QQZ-4k-wSE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbO-SI-gvN">
-                                <rect key="frame" x="166" y="229" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbO-SI-gvN">
+                                <rect key="frame" x="166" y="204" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3u8-pW-4Yg"/>
+                                    <constraint firstAttribute="width" constant="40" id="kS9-Rk-6NK"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="radio-unselected.png"/>
                                 <connections>
                                     <action selector="femaleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="41u-30-3u2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4D5-MS-fMa">
+                                <rect key="frame" x="20" y="89" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="T8f-Rf-N5J"/>
+                                    <constraint firstAttribute="height" constant="21" id="mgx-cR-DO4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGX-f0-Cyt">
+                                <rect key="frame" x="20" y="342" width="110" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dQv-gf-hUW"/>
+                                    <constraint firstAttribute="width" constant="110" id="keZ-Gd-LOK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s34-jF-ZUL">
+                                <rect key="frame" x="176" y="327" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="O3O-4W-v6s"/>
+                                    <constraint firstAttribute="width" constant="40" id="vLA-ne-AHm"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="checkbox.png"/>
+                                <connections>
+                                    <action selector="alertCheckBoxPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nhd-Pv-PgE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bc-Wz-CB1">
+                                <rect key="frame" x="20" y="405" width="110" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="VLj-MX-cqJ"/>
+                                    <constraint firstAttribute="height" constant="21" id="pkp-3m-VwG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eky-os-KzA">
+                                <rect key="frame" x="176" y="388" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Y5F-S4-mie"/>
+                                    <constraint firstAttribute="width" constant="40" id="l7V-aZ-xoC"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="checkbox.png"/>
+                                <connections>
+                                    <action selector="notificationCheckboxPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Kx-qu-qia"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkbox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B64-RJ-GNV">
+                                <rect key="frame" x="20" y="279" width="374" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="qrT-RK-IsW"/>
+                                    <constraint firstAttribute="height" constant="22" id="uGJ-HY-41h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7Z-yQ-Rxt">
+                                <rect key="frame" x="6" y="112" width="388" height="3"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="CEA-qx-NcI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXl-vJ-8HE">
+                                <rect key="frame" x="6" y="304" width="388" height="3"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="eSa-HA-do8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bzz-9M-4vh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="0vQ-lb-12f"/>
+                            <constraint firstItem="pAL-M5-afx" firstAttribute="top" secondItem="h7Z-yQ-Rxt" secondAttribute="bottom" constant="37" id="2Il-H4-j2E"/>
+                            <constraint firstItem="h7Z-yQ-Rxt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="6" id="2Vj-qu-FKu"/>
+                            <constraint firstItem="QdO-Il-VB9" firstAttribute="top" secondItem="h7Z-yQ-Rxt" secondAttribute="bottom" constant="28" id="2zW-eR-Q8D"/>
+                            <constraint firstItem="3bc-Wz-CB1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="6eO-F1-xLB"/>
+                            <constraint firstItem="XbO-SI-gvN" firstAttribute="top" secondItem="QdO-Il-VB9" secondAttribute="bottom" constant="21" id="7gX-6F-hEq"/>
+                            <constraint firstItem="B64-RJ-GNV" firstAttribute="top" secondItem="XbO-SI-gvN" secondAttribute="bottom" constant="35" id="9vA-xv-bdW"/>
+                            <constraint firstItem="3bc-Wz-CB1" firstAttribute="top" secondItem="KGX-f0-Cyt" secondAttribute="bottom" constant="42" id="BlW-1I-uyR"/>
+                            <constraint firstItem="Eky-os-KzA" firstAttribute="leading" secondItem="3bc-Wz-CB1" secondAttribute="trailing" constant="46" id="EbK-q9-JFg"/>
+                            <constraint firstAttribute="trailing" secondItem="hXl-vJ-8HE" secondAttribute="trailing" constant="20" id="EmJ-af-OOf"/>
+                            <constraint firstItem="XbO-SI-gvN" firstAttribute="leading" secondItem="bzz-9M-4vh" secondAttribute="trailing" constant="36" id="IRr-Nm-DaE"/>
+                            <constraint firstItem="KGX-f0-Cyt" firstAttribute="top" secondItem="hXl-vJ-8HE" secondAttribute="bottom" constant="35" id="JDp-yh-sDF"/>
+                            <constraint firstAttribute="trailing" secondItem="h7Z-yQ-Rxt" secondAttribute="trailing" constant="20" id="MMd-bD-h7f"/>
+                            <constraint firstItem="KGX-f0-Cyt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="MzH-WC-hBr"/>
+                            <constraint firstItem="s34-jF-ZUL" firstAttribute="top" secondItem="hXl-vJ-8HE" secondAttribute="bottom" constant="20" id="Sl8-YC-7Wo"/>
+                            <constraint firstItem="hXl-vJ-8HE" firstAttribute="top" secondItem="B64-RJ-GNV" secondAttribute="bottom" constant="3" id="Xx1-QK-IwX"/>
+                            <constraint firstItem="pAL-M5-afx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ZY7-Ou-XWX"/>
+                            <constraint firstItem="QdO-Il-VB9" firstAttribute="leading" secondItem="pAL-M5-afx" secondAttribute="trailing" constant="36" id="ZoJ-B5-uNk"/>
+                            <constraint firstItem="hXl-vJ-8HE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="6" id="chy-Hh-bzg"/>
+                            <constraint firstItem="h7Z-yQ-Rxt" firstAttribute="top" secondItem="4D5-MS-fMa" secondAttribute="bottom" constant="2" id="deJ-Q6-8en"/>
+                            <constraint firstItem="4D5-MS-fMa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="guh-hl-M7j"/>
+                            <constraint firstItem="bzz-9M-4vh" firstAttribute="top" secondItem="pAL-M5-afx" secondAttribute="bottom" constant="42" id="kqu-Mv-32U"/>
+                            <constraint firstItem="s34-jF-ZUL" firstAttribute="leading" secondItem="KGX-f0-Cyt" secondAttribute="trailing" constant="46" id="ly6-hR-HBJ"/>
+                            <constraint firstItem="Eky-os-KzA" firstAttribute="top" secondItem="s34-jF-ZUL" secondAttribute="bottom" constant="21" id="naJ-U4-Iky"/>
+                            <constraint firstItem="B64-RJ-GNV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="xsN-rc-Dmy"/>
+                            <constraint firstItem="4D5-MS-fMa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ykW-MF-nMw"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="YBT-Sc-JHN"/>
@@ -55,11 +175,13 @@
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="sx2-zX-Xps"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Radio Button" id="5DD-8V-5xA"/>
+                    <navigationItem key="navigationItem" title="Radio Button/Checkbox" id="5DD-8V-5xA"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="alertbutton" destination="s34-jF-ZUL" id="lpm-Nq-j6i"/>
                         <outlet property="femaleButton" destination="XbO-SI-gvN" id="wTf-ff-so2"/>
                         <outlet property="maleButton" destination="QdO-Il-VB9" id="fxh-ZG-g3l"/>
+                        <outlet property="notificationButton" destination="Eky-os-KzA" id="ySb-h0-BRu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -91,6 +213,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkbox.png" width="104" height="105"/>
         <image name="radio-unselected.png" width="126" height="126"/>
     </resources>
 </document>
